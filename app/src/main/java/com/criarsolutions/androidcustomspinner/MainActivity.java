@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 activityMainBinding.cv.setVisibility(View.INVISIBLE);
                 isVisible = !isVisible;
                 activityMainBinding.textSpinner.setText("Click here");
-                Toast.makeText(this, "Nothing Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Nothing clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
