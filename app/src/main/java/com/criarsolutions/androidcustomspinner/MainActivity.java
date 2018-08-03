@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         isVisible = !isVisible;
     }
 
-    void displaySchedule(int id) {
+    void selectMenuItem(int id) {
         switch (id) {
             case R.id.cl1:
                 activityMainBinding.cv.setVisibility(View.INVISIBLE);
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
     private View.OnClickListener menuListener = new View.OnClickListener() {
         public void onClick(View v) {
-            displaySchedule(v.getId());
+            selectMenuItem(v.getId());
         }
     };
 }
