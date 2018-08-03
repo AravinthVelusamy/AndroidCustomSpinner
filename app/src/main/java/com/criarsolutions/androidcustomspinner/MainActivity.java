@@ -18,7 +18,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-
+        activityMainBinding.cl1.setOnClickListener(menuListener);
+        activityMainBinding.cl2.setOnClickListener(menuListener);
+        activityMainBinding.cl3.setOnClickListener(menuListener);
+        activityMainBinding.cl4.setOnClickListener(menuListener);
+        activityMainBinding.cl5.setOnClickListener(menuListener);
     }
 
     public void onSlideViewButtonClick(View view) {
